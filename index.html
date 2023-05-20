@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
     <title>Burger Website</title>
    
 </head>
 <body>
-
+    <a href="#"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.336"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 13.79C15.91 13.94 15.72 14.01 15.53 14.01C15.34 14.01 15.15 13.94 15 13.79L12 10.79L9 13.79C8.71 14.08 8.23 14.08 7.94 13.79C7.65 13.5 7.65 13.02 7.94 12.73L11.47 9.2C11.76 8.91 12.24 8.91 12.53 9.2L16.06 12.73C16.35 13.03 16.35 13.5 16.06 13.79Z" fill="#FAB002"></path> </g></svg></a>
     <header>
             <nav>
             <a class="logo" href="index.html"><img src="img/BURGER.png" alt="logo"></a>    
@@ -35,7 +38,7 @@
             No te quedes con la ganas. </p>
             <span>!Te esperamos!</span><br>
 
-            <button>Ordenar Ahora</button>
+            <button onclick="window.location.href = '#menu';">Ordenar Ahora</button>
         </div>
        
         <div class="inicio_ilustracion">
@@ -45,18 +48,66 @@
 
     </section>
 
-    <section id="menu">
-        
-        <div class="slider-frame">
-            <ul>
-                <li><img class="img" src="img/burger2.png" alt=""></li>
-                <li><img class="img" src="img/burger2.png" alt=""></li>
-                <li><img class="img" src="img/burger2.png" alt=""></li>
-                <li><img class="img" src="img/burger2.png" alt=""></li>
-            </ul>
-        </div>
 
-    </section>
+
+  <!--<section id="menu">-->  
+   <section id="menu">
+         <!-- Slider main container -->
+         <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h1> BURGUER THE KING</h1>
+                    <img class="sliderimg"src="img/burgertipo5.png" alt="burger">
+                    
+                    <p>250 gramos de carne, queso mozzarella, lechuga, tomate, pimentón, piña, salsa de la casa y pan artesanal.</p>
+                    <button>Comprar</button>   
+
+                </div>
+                <div class="swiper-slide">
+                        <h1> BURGUER LOCURA</h1>
+                        <img class="sliderimg"src="img/burgertipo6.png" alt="burger">
+                        <p>250 gramos de carne, queso mozzarella , queso maasdam, lechuga, pepinillos y pan artesanal.</p>
+                        <button>Comprar</button>
+                    
+                </div>
+                <div class="swiper-slide">
+                        <h1> BURGUER DE LA GRANJA</h1>
+                        <img class="sliderimg"src="img/burgertipo4.png" alt="burger">
+                        <p>170 gramos de carne, queso mozzarella, pepinillos, jamón de cerdo, pollo desmechado y salsas de la casa.</p>      
+                        <button>Comprar</button>
+                </div>
+                <div class="swiper-slide">
+                        <h1> BURGUER MAGO DE OZ</h1>
+                        <img class="sliderimg"src="img/burgertipo3.png" alt="burger">
+                        <p>230 gramos de carne, queso cheddar, plátano maduro, pan artesanal, salsas de la casa</p>
+                        <button>Comprar</button>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <h1> BURGUER JUNGLA URBANA</h1>
+                        <img class="sliderimg"src="img/burgertipo2.png" alt="burger">
+                        <p>230 gramos de carne, queso mozzarella, tocineta, cebolla caramelizada, pan artesanal y salsa BBQ, . </p>      
+                        <button>Comprar</button> 
+                </div>
+                <div class="swiper-slide">
+                        <h1> BURGUER OESTE SALVAJE</h1>
+                        <img class="sliderimg"src="img/burgertipo1.png" alt="burger">
+                        <p>170 gramos de carne, queso mozzarella, lechuga, tomate, aguacate y huevo frito. </p>    
+                        <button>Comprar</button>
+                </div>
+            </div>
+        
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            </div>
+    
+
+   </section>
+
 
     <h1>CONTACTO</h1>
     <section id="contacto">
@@ -65,15 +116,23 @@
             <script src='https://www.bing.com/api/maps/mapcontrol?callback=loadMapScenario&key=ApbBct-GWjfQDPE0I2YJ-69ZN4OiA9qYXARX6NZnkxPTzqCMeZCgGW3lV-15c1ub'></script>
             
             <div class="contact">
-                <h2>Dirección</h2>
-                <p>Bogotá, Colombia 1113111</p>
-                <h2>E-mail</h2>
-                <p>burger@pidela.com</p>
-                <h2>Teléfono</h2>
-                <p>+57 3122456784</p>
+                <div class="seccioncontacto1">
+                    <h2>Dirección</h2>
+                    <p>Bogotá, Colombia 1113111</p>
+                </div>
+                <div class="seccioncontacto2">
+                    <h2>E-mail</h2>
+                    <p>burger@pidela.com</p>
+                </div>
+                <div class="seccioncontacto3">
+                    <h2>Teléfono</h2>
+                    <p>+57 3122456784</p>
+                </div>
+                <div class="redes">
                 <img class="insta" src="img/instagram.png" alt="instagram" href="https://www.instagram.com/">
                 <img class="face" src="img/facebook.png" alt="Facebook" href="https://www.facebook.com/">
                 <img class="whats" src="img/whatsapp.png" alt="Whatsapp" href="https://web.whatsapp.com/">
+                </div>    
             </div>
 
     </section>
@@ -103,22 +162,29 @@
     <h1>EXPERIENCIAS</h1>
     <section id="experiencias">
         <div>
-        <h1>Carolina Acevedo </h1>
-        <img class="customer" src="./img/customer1.jpg" alt="customer">
+            <h1>Carolina Acevedo</h1>
+            <div class="customer">
+                <img class="customer-img" src="./img/customer1.jpg" alt="customer">
+                <p class="experiencias_descripcion">¡Las hamburguesas artesanales en el gastro bar son una delicia imprescindible para los amantes de la comida!</p>
+            </div>
         </div>
         <div>
-        <h1>Juan Carlos</h1>
-        <img  class="customer"src="./img/customer3.jpg" alt="customer">
-    </div>
-    <div>
-        <h1>Natasha Avedaño</h1>
-        <img  class="customer"src="./img/customer2.jpg" alt="customer">
+            <h1>Juan Carlos</h1>
+            <div class="customer">
+                <img class="customer-img" src="./img/customer3.jpg" alt="customer">
+                <p class="experiencias_descripcion">Como amante de hamburguesas y bebidas, el gastro bar se convirtió en mi lugar favorito. Las hamburguesas artesanales y la variedad de bebidas son simplemente excepcionales. ¡Altamente recomendado!</p>
+            </div>
+        </div>
+        <div>
+            <h1>Natasha Avedaño</h1>
+            <div class="customer">
+                <img class="customer-img" src="./img/customer2.jpg" alt="customer">
+                <p class="experiencias_descripcion">Quedé encantada con el gastro bar y su peculiar sabor en las hamburguesas. Cada bocado era una explosión de sabores únicos que me dejaron maravillada. ¡Una experiencia gastronómica inolvidable!</p>
+            </div>
         </div>
     </section>
-    <button>Ordenar Ahora</button>
-
-
-
-    
+    <button class="btnexperiencias" onclick="window.location.href = '#menu';">Ordenar Ahora</button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

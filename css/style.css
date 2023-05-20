@@ -1,20 +1,29 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://use.typekit.net/umq2wvp.css");
-
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 html, body {
+    
     font-family: rockwell,sans-serif;
     height: 100%;
     background-image: url(blackwood.jpg); 
     text-align: center;
 }
+svg{
+    width: 5%;
+    margin: 0 93%;
+    position: fixed;
+    padding: 45% 0;
 
-/*Empieza etapa de menú*/
+}
+
 header {
     background-color: transparent;
     display: inline-block;
@@ -52,38 +61,39 @@ nav ul li a:hover {
     height: auto;
 }
 
-/**Empieza etapa de inicio*/
+/**Empieza etapa de "inicio"*/
 
 #inicio{
 display: flex;
 color: white;
-margin-top: 4rem;
 }  
 .inicio_descripcion{
-    margin: 1rem;
     text-align: center;
+    padding: 1rem;
+   
 }
 .inicio_descripcion h1{
     font-family: "cooper-black-std", serif;
-    font-size: 2.7rem;
+    font-size: 1.9rem;
     color: #FAB002;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;  
    
 }
 .inicio_descripcion p{
     font-family: rockwell, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
     text-align: justify;
+    line-height: 1.7rem;
 }
 .inicio_descripcion span{
         font-family: rockwell, sans-serif;
         font-style: normal;
         font-weight: 300;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: 8rem;
         line-height: 6rem;
@@ -93,10 +103,10 @@ margin-top: 4rem;
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    width: 30%;
-    height: 12%;
+    width: 40%;
+    height: 14%;
     border-radius: 20px;
     display: inline-block; 
     transition: box-shadow 0.3s ease-in-out;
@@ -108,67 +118,108 @@ margin-top: 4rem;
 .inicio_descripcion button:hover{
     border: none;
     box-shadow: 0px 0px 13px rgb(158, 145, 145); 
-   
 }
 .inicio_ilustracion{
-    width: 50%;  
+    width: 55%
+      
 }
 .img1{
-    width: 700px;
+    width: 560px;
 }
 
 /*Empieza la sección del menu*/
+#menu{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.116);
+  border-radius: 30px;
 
-.slider-frame {
-	width: 100%;
-    height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
+}
+.swiper-slide h1{
+    color: #FAB002;
+    margin: 9px;
+}
+.swiper-slide p{
+    font-size: 1.6rem;
+    margin: 1rem;
+    font-weight: 540;
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+  border-radius: 30px; 
+}
+.productinfo{
+  background-color: yellow;
+}
+.sliderimg{
+  width: 400px;
+  
 }
 
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 270%;
-	animation: slide 20s infinite alternate ease-in-out;
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next {
+  right: 50px;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
 }
 
-.slider-frame li {
-	width: 80%;
-	list-style: none;
+button{
+    background-color: #FAB002;
+    color: black;
+    font-family: rockwell, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 20%;
+    height: 10%;
+    border-radius: 20px;
+    display: inline-block; 
+    transition: box-shadow 0.3s ease-in-out;
+    border:none;
+    box-shadow: 0px 0px 7px rgb(158, 145, 145); 
+   
+
 }
-
-.slider-frame img {
-	width: 80%;
+button:hover{
+    border: none;
+    box-shadow: 0px 0px 13px rgb(158, 145, 145); 
 }
-.img{
-    width: 900px;
-}
-
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
-
-
-
 
 /*Contacto section*/
 
 h1{
     color: #FAB002;
     font-family: cooper,sans-serif;
-    font-size: 2.7rem;
+    font-size: 2.1rem;
     margin: 5%;
 }
 
@@ -195,6 +246,11 @@ h1{
     
 }
 #contacto .contact{
+   display: grid;
+   grid-template-areas: 
+   "seccioncontacto1 seccioncontacto2"
+   "seccioncontacto3 seccioncontacto3"
+   "redes redes";
    text-align: center;
    width: 50%;
    font-family: rockwell,sans-serif;
@@ -202,9 +258,22 @@ h1{
    color: white;
   
 }
+.seccioncontacto1{
+    grid-area: seccioncontacto1;
+}
+.seccioncontacto2{
+    grid-area: seccioncontacto2;
+}
+.seccioncontacto3{
+    grid-area: seccioncontacto3;
+}
+.redes{
+    grid-area: redes;
+        
+}
 .insta, .face, .whats{
-    margin: 16% 12%;
-    width: 60px;
+    margin: 2% 12%;
+    width: 50px;
 }
 
 h2{
@@ -233,7 +302,7 @@ h2{
     width: 60%;
     margin: 2%;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     
   
 }
@@ -243,30 +312,49 @@ h2{
 }
 
 /*Experiencias*/
+
 #experiencias{
     display:flex;
 }
 #experiencias div{
     text-align:center;
-    margin: 3%;
-
+    margin: 3% 5%;
 }
-.customer{
-    width: 450px;
+.customer-img{
+    width: 320px;
+    height: 420px;
     border-radius: 20px;
-    
-}
-.customer:hover{
-    border: none;
-    box-shadow: 0px 0px 41px #FAB002; 
-   
 }
 
+.experiencias_descripcion {
+    position: absolute; 
+    background-color: rgba(31, 30, 28, 0.863);
+    color: #fff;
+    padding: 50% 1%;
+    border-radius: 20px;
+    display: none; 
+    z-index: 1; 
+    width: 320px;
+    height: 420px;
+    margin: -147% 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size:x-large;
+}
+
+.customer:hover .experiencias_descripcion {
+    display: block; 
+    opacity: 1;
+    box-shadow: 0px 0px 13px #FAB002; 
+}
+
+.customer {
+    position: relative; /* Asegura que el contenedor de la imagen sea relativo */
+}
 #experiencias h1{
-    font-size: 1.6rem;
-
+    font-size: 1.5rem;
 }
-button{
+.btnexperiencias{
     margin: 3%;
     background-color: #FAB002;
     color: black;
@@ -280,12 +368,9 @@ button{
     transition: box-shadow 0.3s ease-in-out;
     border:none;
     box-shadow: 0px 0px 7px rgb(158, 145, 145); 
-   
-
 }
-button:hover{
+.btnexperiencias:hover{
     border: none;
     box-shadow: 0px 0px 13px rgb(158, 145, 145); 
-   
 }
 
