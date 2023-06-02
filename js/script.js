@@ -1,6 +1,9 @@
-
-
-
+//Ejecutamos serviceworker
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./js/ServiceWorker.js')
+    .then(reg => console.log('Registro con ServiceWorker exitosa', reg))
+    .catch(err => console.warn('Error Con el registro del service worker',err))
+}
 //Animation con js para menu
 document.querySelector(".burger_menu").addEventListener("click", animateBars);
 var line1=document.querySelector(".line1_menu");
@@ -23,9 +26,6 @@ function animateBars(){
 //ocultamos el menu lateral cuando el usuario seleccione una opción
 document.querySelector("ul").addEventListener("click",animateBars);
 
-  
-
-
 
 
 //slider
@@ -42,3 +42,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   });
+
+
+//SERVICE WORKER
+

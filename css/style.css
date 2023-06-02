@@ -33,6 +33,7 @@ header {
  
 }
 nav{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -330,7 +331,7 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+ 
   .box{
     width: 350px;
     height: 650px;
@@ -403,7 +404,7 @@ h2{
 
 
 #experiencias h1{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .btnexperiencias{
     margin: 3%;
@@ -423,6 +424,26 @@ h2{
     border: none;
     box-shadow: 0px 0px 13px rgb(158, 145, 145); 
 }
+hr{
+    border: 1px dashed #FAB002;
+    width: 100%;
+    margin: auto;
+}
+footer{
+    
+    padding: 5px;
+    background-color: #000000;
+}
+footer i{
+    font-size: 40px;
+}
+footer p{
+    margin: 1% 0;
+    color: white;
+    line-height: 1.9rem;
+}
+
+
 
 @media(max-width:1150px){
 
@@ -449,6 +470,9 @@ h2{
 .about_us_img{
     width: 500px;
 }
+
+
+
 }
 @media (max-width:1060px) {
     .img1{
