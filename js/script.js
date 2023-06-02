@@ -1,17 +1,33 @@
 
-//cargando mapa de bing maps para la seccion contacto
-function loadMapScenario() {
-  var map = new Microsoft.Maps.Map(document.getElementById('map'), {
-      center: new Microsoft.Maps.Location(4.637823, -74.084724),
-      zoom: 16
-  });
-  var center = map.getCenter();
-  var pin = new Microsoft.Maps.Pushpin(center, {
-      title: 'Burguer'
-  });
-  map.entities.push(pin);
+
+
+//Animation con js para menu
+document.querySelector(".burger_menu").addEventListener("click", animateBars);
+var line1=document.querySelector(".line1_menu");
+var line2=document.querySelector(".line2_menu");
+var line3=document.querySelector(".line3_menu");  
+
+function animateBars(){
+  line1.classList.toggle("activeline1_menu");
+  line2.classList.toggle("activeline2_menu");
+  line3.classList.toggle("activeline3_menu");
+
+  //abrir y cerrar menu hamburguesa capturando el div nav-bar y cambiando su estilo de none a block
+  var navBar = document.querySelector(".nav-bar");
+  if (navBar.style.display === "block") {
+    navBar.style.display = "none";
+  } else {
+    navBar.style.display = "block";
+  }
 }
+//ocultamos el menu lateral cuando el usuario seleccione una opción
+document.querySelector("ul").addEventListener("click",animateBars);
+
   
+
+
+
+
 //slider
 
 const swiper = new Swiper('.swiper', {
@@ -19,7 +35,6 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
-  
   // Navigation arrows
   navigation: {
       nextEl: '.swiper-button-next',

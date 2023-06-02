@@ -10,35 +10,37 @@
     
 }
 html, body {
-    
+    margin: 0;
     font-family: rockwell,sans-serif;
     height: 100%;
     background-image: url(blackwood.jpg); 
     text-align: center;
+    
 }
 svg{
     width: 5%;
     margin: 0 93%;
     position: fixed;
     padding: 45% 0;
-
 }
 
+/*Header estilos*/
 header {
     background-color: transparent;
     display: inline-block;
     width: 100%;
+    
  
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    
     
 }
 ul li{
@@ -60,7 +62,9 @@ nav ul li a:hover {
     width: 2.4rem;
     height: auto;
 }
-
+.logo{
+    width: 200px;
+}
 /**Empieza etapa de "inicio"*/
 
 #inicio{
@@ -132,8 +136,8 @@ color: white;
   width: 100%;
   height: 100%;
 }
+
 .swiper-slide{
-  padding: 2rem;
   margin: 2rem 0;
   background-color: rgba(255, 255, 255, 0.116);
   border-radius: 30px;
@@ -149,7 +153,7 @@ color: white;
     font-weight: 540;
 }
 .swiper {
-  width: 90%;
+  width: 95%;
   height: 100%;
   border-radius: 30px; 
 }
@@ -157,7 +161,7 @@ color: white;
   background-color: yellow;
 }
 .sliderimg{
-  width: 400px;
+  width: 300px;
   
 }
 
@@ -201,7 +205,7 @@ button{
     font-weight: bold;
     width: 20%;
     height: 10%;
-    border-radius: 20px;
+    border-radius: 50px;
     display: inline-block; 
     transition: box-shadow 0.3s ease-in-out;
     border:none;
@@ -216,6 +220,14 @@ button:hover{
 
 /*Contacto section*/
 
+#contacto iframe{
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 50vw;
+    height: 90vh;
+    
+}
 h1{
     color: #FAB002;
     font-family: cooper,sans-serif;
@@ -227,22 +239,16 @@ h1{
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin: 2% 0;
+    margin-bottom: 10vh;
     height: 100%;
     
    
 }
-#contacto #map {
-    border: 10px solid lightgray;
-    border-radius: 10px;
-    margin: 1%;
-    width: 50%;
-    height: 96%;
-    
-}
+
 #contacto h1{
     color: #FAB002;
-    background-color: aqua;
+    
+    
     
 }
 #contacto .contact{
@@ -272,7 +278,7 @@ h1{
         
 }
 .insta, .face, .whats{
-    margin: 2% 12%;
+    margin: 1% 12%;
     width: 50px;
 }
 
@@ -287,6 +293,7 @@ h2{
 /*Acerca de */
 #acerca_de{
     display: flex;
+    
 }
 .acerca_de_ilustracion{
     width: 50%;
@@ -294,17 +301,15 @@ h2{
     padding: 3% 0;
 }
 .about_us_img{
-    width: 600px;
+    width: 500px;
     border-radius:30px;
 }
 
 .acerca_de_descripcion {
-    width: 60%;
+    width: 100%;
     margin: 2%;
     color: white;
     font-size: 1.4rem;
-    
-  
 }
 .acerca_de_descripcion p{
     margin: 3rem 0;
@@ -313,44 +318,90 @@ h2{
 
 /*Experiencias*/
 
-#experiencias{
-    display:flex;
-}
-#experiencias div{
-    text-align:center;
-    margin: 3% 5%;
-}
-.customer-img{
-    width: 320px;
-    height: 420px;
-    border-radius: 20px;
-}
-
-.experiencias_descripcion {
-    position: absolute; 
-    background-color: rgba(31, 30, 28, 0.863);
-    color: #fff;
-    padding: 50% 1%;
-    border-radius: 20px;
-    display: none; 
-    z-index: 1; 
-    width: 320px;
-    height: 420px;
-    margin: -147% 0;
+.title{
+    text-align: center;
+    margin-top: 60px;
+    letter-spacing: 2px;
+  }
+  
+  .container-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box{
+    width: 350px;
+    height: 650px;
+    margin: 10px; 
+    padding: 0px;
+    border: none;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    
+  
+  }
+  
+  .box img{
+    height: 70%;
+    width: 100%;
+    transition: all 400ms;
+    border-radius: 13px;
+    
+  
+  
+  }
+  
+  .box h2{
+    font-size: 1.4rem;
+    margin-top: 20px;
+    transition: all 500ms;
+  }
+  
+  .box .container-p{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0px 10px;
+    border-radius: 0px 0px 14px 14px;
+    text-align: justify;
+    
+  }
+  
+  .box p{
+    /* para que suba que le pongo  */
+    font-size: 14px;
+    color: #ffffff;
     opacity: 0;
-    transition: opacity 0.3s ease;
-    font-size:x-large;
-}
-
-.customer:hover .experiencias_descripcion {
-    display: block; 
+    transform: translateY(150px);
+    transition: all 600ms;
+  }
+  
+  
+  .box:hover{
+    background: rgba(0, 0, 0, 0.651);
+  }
+  
+  .box:hover img{
+    transform: translateY(-90px);
+  }
+  
+  .box:hover h2{
+    transform: translateY(-90px);
+  }
+  
+  .box:hover .container-p p{
+    transform: translateY(0px);
     opacity: 1;
-    box-shadow: 0px 0px 13px #FAB002; 
-}
+  }
 
-.customer {
-    position: relative; /* Asegura que el contenedor de la imagen sea relativo */
-}
+
 #experiencias h1{
     font-size: 1.5rem;
 }
@@ -359,11 +410,10 @@ h2{
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 1.2rem;
     width: 20%;
     height: 10%;
-    border-radius: 20px;
+    border-radius: 50px;
     display: inline-block; 
     transition: box-shadow 0.3s ease-in-out;
     border:none;
@@ -373,4 +423,298 @@ h2{
     border: none;
     box-shadow: 0px 0px 13px rgb(158, 145, 145); 
 }
+
+@media(max-width:1150px){
+
+/*contacto*/
+#contacto #map {
+    width: 55%;   
+}
+#contacto .contact{ 
+   grid-template-areas: 
+   "seccioncontacto1"
+   "seccioncontacto2"
+   "seccioncontacto3"
+   "redes";
+}
+.insta, .face, .whats{
+    margin: 2% 10%;
+    width: 50px;
+}
+/*Acerca de*/
+
+.acerca_de_ilustracion{
+    padding: 5% 0;
+}
+.about_us_img{
+    width: 500px;
+}
+}
+@media (max-width:1060px) {
+    .img1{
+        width: 490px;
+    }
+
+    .burger_menu{
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        top: 2%;
+        right: 3%; 
+          
+    }
+    .burger_menu span{
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #FAB002;
+        margin-top: 6px;
+        cursor: pointer;
+        transform-origin: 0px 100%;
+        transition: all 600ms;
+        
+    }
+
+    .activeline1_menu{
+        transform: rotate(45deg) translate(-6px, -1px);
+    }
+    .activeline2_menu{
+        opacity: 0;
+        margin-left: -30px;
+    }
+    .activeline3_menu{
+        transform: rotate(-45deg) translate(-4px, 1px);
+    }
+
+/*Header estilos*/
+header {
+    background-color: transparent;
+    width: 100%;
+    justify-content: flex-end;
+    
+    
+ 
+}
+.nav-bar{
+    width: 600px;
+    margin-left: -10%;
+    display: none;
+    line-height: 6rem;
+    padding-top: 50%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #000000ea;
+    position: fixed;
+    z-index: 3;
+      
+    
+}
+ul{
+    margin-top: 30%;
+}
+ul li{  
+    
+    display: block;
+    
+}
+
+
+
+
+
+}
+
+@media(max-width:940px){
+    .inicio_descripcion button{
+        font-size: 1rem;
+        margin-bottom: 5%;
+    }
+    #acerca_de{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .acerca_de_ilustracion{
+        width: 50%;
+        padding-bottom: 20%;
+        
+    }
+    .about_us_img{
+        width: 400px;
+        border-radius:30px;
+    }
+    
+    .acerca_de_descripcion {
+        width: 50%;
+        margin: 1%;
+        padding: 0 2%;
+        color: white;
+        font-size: 1.2rem;
+        
+      
+    }
+    .acerca_de_descripcion p{
+        margin: 3rem 0;
+        text-align: justify;
+    }
+.img1{
+    width: 460px;
+}
+
+.insta, .face, .whats{
+    margin: 3% 4%;
+    width: 30px;
+}
+
+}
+
+@media(max-width:830px){
+    .img1{
+        width: 380px;
+    }
+   
+    .acerca_de_ilustracion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    #acerca_de{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .about_us_img{
+        width: 500px;
+        border-radius:30px;
+    }
+    
+    .acerca_de_descripcion {
+        width: 100%;
+        
+    }
+    .acerca_de_descripcion p{
+        margin: 3rem 0;
+        text-align: justify;
+    }
+   
+    h2{
+        margin: 2rem;
+    }
+    .sliderimg{
+        width: 300px;
+        
+      }
+    .btnexperiencias{
+        font-size: 1.1rem;
+    }
+      
+
+}
+@media(max-width:650px){
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+.img1{
+    width: 400px;
+}
+.inicio_descripcion button{
+    width: 30%;
+    height: 40px;
+}
+.btnexperiencias{
+    width: 180px;
+}
+#contacto p{
+    font-size: 1rem;
+}
+#contacto h2{
+    font-size: 1.3rem;
+}
+#contacto #map{
+    width: 80%;
+}
+h1{
+    font-size: 1.5rem;
+}
+.swiper-slide p{
+    font-size: 1.2rem;
+}
+.swiper button{
+    font-size: 1rem;
+}
+.inicio_descripcion h1{
+    font-size: 1.5rem;
+}
+.inicio_descripcion p{
+    font-size: 1.1rem;
+}
+.box{
+    margin-top: 0;
+    
+}
+}
+
+@media (max-width:550px){
+    
+.img1{
+    width: 300px;
+}
+.nav-bar{
+    padding-top:60% ;
+}
+button{
+    
+}
+.about_us_img{
+    width: 80vw;
+}
+
+@media(max-width:450px){
+
+    .nav-bar{
+        padding-top:100%;
+        line-height: 5rem;
+        width: 450px;
+        height: 200vh;
+    }
+
+    .img1{
+        width: 200px;
+    }
+    button{
+        width: 120px;
+        height: 50px;
+    }
+    #contacto{
+        flex-direction: column;
+        align-items: center;
+        height: 110vh;
+    }
+    #contacto iframe{
+        
+        width: 90vw;   
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+}
+
+    
+
+
+
 

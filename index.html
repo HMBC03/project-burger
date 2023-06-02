@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-  />
-    <title>Burger Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/57e129950d.js" crossorigin="anonymous"></script>
+    <title>Burger</title>
    
 </head>
 <body>
-    <a href="#"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.336"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 13.79C15.91 13.94 15.72 14.01 15.53 14.01C15.34 14.01 15.15 13.94 15 13.79L12 10.79L9 13.79C8.71 14.08 8.23 14.08 7.94 13.79C7.65 13.5 7.65 13.02 7.94 12.73L11.47 9.2C11.76 8.91 12.24 8.91 12.53 9.2L16.06 12.73C16.35 13.03 16.35 13.5 16.06 13.79Z" fill="#FAB002"></path> </g></svg></a>
+    <!--<a href="#"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.336"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 13.79C15.91 13.94 15.72 14.01 15.53 14.01C15.34 14.01 15.15 13.94 15 13.79L12 10.79L9 13.79C8.71 14.08 8.23 14.08 7.94 13.79C7.65 13.5 7.65 13.02 7.94 12.73L11.47 9.2C11.76 8.91 12.24 8.91 12.53 9.2L16.06 12.73C16.35 13.03 16.35 13.5 16.06 13.79Z" fill="#FAB002"></path> </g></svg></a>-->
     <header>
-            <nav>
-            <a class="logo" href="index.html"><img src="img/BURGER.png" alt="logo"></a>    
+        <nav>
+            <a href="index.html"><img class="logo" src="img/BURGER.png" alt="logo"></a>    
+            
+                <div class="burger_menu">
+                    <span class="line1_menu"></span>
+                    <span class="line2_menu"></span>
+                    <span class="line3_menu"></span>
+                </div> 
+            <div class="nav-bar">
+
             <ul>    
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#acerca_de">Acerca de</a></li>
                 <li><a href="#experiencias">Experiencias</a></li>
-                <li><img class="carrito" src="img/iconcarrito.png" alt="carrito"></li>
-            </ul> 
+                <li><a href="index.html">.<i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+            </ul>
+            </div> 
         </nav>
          
     </header>
@@ -111,9 +119,9 @@
 
     <h1>CONTACTO</h1>
     <section id="contacto">
+        <iframe id="mapa" title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.374608549204!2d-74.08640294458004!3d4.6219682999999945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99867de2d59d%3A0x46f4e46d41ec6c6c!2sUniversidad%20Distrital%20Francisco%20Jos%C3%A9%20De%20Caldas%20-%20Sede%20Calle%2034!5e0!3m2!1ses!2sco!4v1685487140522!5m2!1ses!2sco"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
-        <div id="map"></div>
-            <script src='https://www.bing.com/api/maps/mapcontrol?callback=loadMapScenario&key=ApbBct-GWjfQDPE0I2YJ-69ZN4OiA9qYXARX6NZnkxPTzqCMeZCgGW3lV-15c1ub'></script>
+            
             
             <div class="contact">
                 <div class="seccioncontacto1">
@@ -136,55 +144,77 @@
             </div>
 
     </section>
-    
+    <h1>SOBRE NOSOTROS</h1>
     <section id="acerca_de">
+        
          <div class="acerca_de_ilustracion">
             <img class="about_us_img" src="./img/aboutus3.jpg" alt="">
          </div>  
         <div class="acerca_de_descripcion">
-         <h1>SOBRE NOSOTROS</h1>
+         
         <p>Después de trabajar en varios empleos precarios Diego decidió emprender. Pero no quería hacer algo común, algo que no fuera fiel a sus raíces. Él quería hacer algo especial, algo que reflejara su historia y su pasión.</p>
             <p>
             Motivado por la cocina, y en especial de las hamburguesas y aprendió a hacerlas durante sus viajes por Latinoamérica, también descubierto que las hamburguesas artesanales eran una de las comidas más populares y queridas en todos los lugares que visitaba.
             Entonces lo supo él quería hacer hamburguesas artesanales, con ingredientes frescos y de la mejor calidad, y con un sabor que no se pudiera encontrar en ningún otro lugar.
             </p>
             <p>
-            Reunió lo necesario para abrir BURGER. Creo hamburguesas que son diferentes, son especiales, eso las hace únicas y atractivas para el publico.
+            Creó hamburguesas que son diferentes, son especiales, eso las hace únicas y atractivas para el publico.
             </p>
             <p>
-            Se dedico a perfeccionar sus recetas, a experimentar con nuevos ingredientes y sabores. Sus hamburguesas se han convertido en un punto de referencia para Bogotá, y un lugar de encuentro para todos aquellos que aman descubrir nuevos sabores.
+            Se dedico a perfeccionar sus recetas, a experimentar con nuevos ingredientes y sabores. Se ha convertido en un punto de referencia para Bogotá, y un lugar de encuentro para todos aquellos que aman descubrir nuevos sabores.
             </p>
-            <p>
-            Diego sigue creando nuevas y deliciosas recetas para deleitar a sus clientes. Pero más allá de eso, sigue siendo un ejemplo de lucha y superación para todos aquellos que, como él, buscan hacer realidad sus sueños y hacer del mundo un lugar mejor.</p>
+           
         </div>    
     </section>
-
-    <h1>EXPERIENCIAS</h1>
     <section id="experiencias">
-        <div>
-            <h1>Carolina Acevedo</h1>
-            <div class="customer">
-                <img class="customer-img" src="./img/customer1.jpg" alt="customer">
-                <p class="experiencias_descripcion">¡Las hamburguesas artesanales en el gastro bar son una delicia imprescindible para los amantes de la comida!</p>
+    <h1>EXPERIENCIAS</h1>
+    <div class="container-box">
+
+        <div class="box box1">
+            <img src="img/customer3.jpg" alt="">
+            <h2>Juan Carlos</h2>
+            
+            <div class="container-p">
+                <p>¡Las hamburguesas artesanales en el gastro bar son una delicia imprescindible para los amantes de la comida!</p>
             </div>
+
+
         </div>
-        <div>
-            <h1>Juan Carlos</h1>
-            <div class="customer">
-                <img class="customer-img" src="./img/customer3.jpg" alt="customer">
-                <p class="experiencias_descripcion">Como amante de hamburguesas y bebidas, el gastro bar se convirtió en mi lugar favorito. Las hamburguesas artesanales y la variedad de bebidas son simplemente excepcionales. ¡Altamente recomendado!</p>
+
+        <div class="box box2">
+            <img src="img/customer1.jpg" alt="">
+            <h2>Natasha Avedaño</h2>
+            <div class="container-p">
+                <p> Se convirtió en mi lugar favorito. Las hamburguesas artesanales y la variedad de bebidas son simplemente excepcionales. ¡Altamente recomendado!
+                </p>
             </div>
+
         </div>
-        <div>
-            <h1>Natasha Avedaño</h1>
-            <div class="customer">
-                <img class="customer-img" src="./img/customer2.jpg" alt="customer">
-                <p class="experiencias_descripcion">Quedé encantada con el gastro bar y su peculiar sabor en las hamburguesas. Cada bocado era una explosión de sabores únicos que me dejaron maravillada. ¡Una experiencia gastronómica inolvidable!</p>
+
+        <div class="box box3">
+            <img src="img/customer2.jpg" alt="">
+            <h2>Carolina Acevedo</h2>
+            <div class="container-p">
+                <p>Cada bocado era una explosión de sabores únicos que me dejaron maravillada. ¡Una experiencia gastronómica inolvidable!</p>
             </div>
+
         </div>
+
+    </div>
+   
     </section>
     <button class="btnexperiencias" onclick="window.location.href = '#menu';">Ordenar Ahora</button>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+
+       
+
+
+
+
+
+
+
 </body>
 </html>
