@@ -1,4 +1,4 @@
-Sugerencias: La PWA funciona con normalidad en GOOGLE CHROME
+
 
 
 

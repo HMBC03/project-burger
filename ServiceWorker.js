@@ -1,28 +1,25 @@
 ;
-//Establecemos el nombre a la cache y los recursos necesarios
-const CACHE_NAME = 'v1_burger_project',
-  urlsToCache = [
+const CACHE_NAME = 'project_burger';
+const urlsToCache = [
     './',
-    './resources/',
     './index.html',
     './css/style.css',
     './js/script.js',
-    './js/ServiceWorker.js'
+    './resources'
     
-  ]
+  ];
 
-
-//Instalación almacenar archivos estaticos en cache de la constante que creamos
+//durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
         return cache.addAll(urlsToCache)
-          .then(() => self.skipWaiting())
+          .then(() => self.skipWaiting());
       })
       .catch(err => console.log('Falló registro de cache', err))
   )
-})
+});
 
 //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
 self.addEventListener('activate', e => {
@@ -44,8 +41,7 @@ self.addEventListener('activate', e => {
       .then(() => self.clients.claim())
   )
 })
-//Guardamos lo que el usuario haga y podamos guardar cuando se recupere la conexion se envia a el servidor los datos
-//evitando perdida de información
+
 //cuando el navegador recupera una url
 self.addEventListener('fetch', e => {
   //Responder ya sea con el objeto en caché o continuar y buscar la url real

@@ -1,6 +1,6 @@
 //Ejecutamos serviceworker
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('./js/ServiceWorker.js')
+  navigator.serviceWorker.register('./ServiceWorker.js')
     .then(reg => console.log('Registro con ServiceWorker exitosa', reg))
     .catch(err => console.warn('Error Con el registro del service worker',err))
 }
