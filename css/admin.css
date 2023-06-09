@@ -1,0 +1,21 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #FAB002;
+    align-self: center;
+}
+button{
+    margin: 3%;
+    background-color: #FAB002;
+    color: black;
+    font-family: rockwell, sans-serif;
+    font-size: 1.2rem;
+    width: 20%;
+    height: 10%;
+    border-radius: 50px;
+    display: inline-block; 
+    transition: box-shadow 0.3s ease-in-out;
+    border:none;
+    box-shadow: 0px 0px 7px rgb(158, 145, 145); 
+}

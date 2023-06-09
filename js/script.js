@@ -26,8 +26,6 @@ function animateBars(){
 //ocultamos el menu lateral cuando el usuario seleccione una opción
 document.querySelector("ul").addEventListener("click",animateBars);
 
-
-
 //slider
 
 const swiper = new Swiper('.swiper', {
@@ -44,5 +42,5 @@ const swiper = new Swiper('.swiper', {
   });
 
 
-//SERVICE WORKER
+
 

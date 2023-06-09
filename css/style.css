@@ -542,11 +542,6 @@ ul li{
     display: block;
     
 }
-
-
-
-
-
 }
 
 @media(max-width:940px){
@@ -692,13 +687,11 @@ h1{
 .nav-bar{
     padding-top:60% ;
 }
-button{
-    
-}
+
 .about_us_img{
     width: 80vw;
 }
-
+}
 @media(max-width:450px){
 
     .nav-bar{
@@ -724,18 +717,33 @@ button{
         
         width: 90vw;   
     }
+}
+
+@media(max-width:360px){
+
+    .nav-bar{
+        padding-top:150%;
+        line-height: 5rem;
+        width: 390px;
+        height: 160vh;
+        
+    }
     
 
 }
 
+@media(max-width:280px){
 
+    .nav-bar{
+        padding-top:160%;
+        width: 300px;
+        height: 190vh;
+        
+    }
+}    
 
+/**/
 
-
-
-
-
-}
 
     
 
