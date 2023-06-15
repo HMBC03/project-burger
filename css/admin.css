@@ -1,21 +1,61 @@
+html{
+    background-image: url('blackwood.jpg');
+}
+
 body{
-   font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    color: #FAB002;
-    align-self: center;
-}
-button{
-    margin: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.712);
+    margin: 1%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1%;
+    
+ }
+ 
+ section{
+     margin: 5% 5%;
+     overflow: scroll;
+ }
+ 
+ h1{
+     
+     font-size: 50px;
+     
+ }
+ a{
+    text-decoration: none;
     background-color: #FAB002;
-    color: black;
-    font-family: rockwell, sans-serif;
-    font-size: 1.2rem;
-    width: 20%;
-    height: 10%;
-    border-radius: 50px;
-    display: inline-block; 
-    transition: box-shadow 0.3s ease-in-out;
-    border:none;
-    box-shadow: 0px 0px 7px rgb(158, 145, 145); 
+     color: rgb(255, 255, 255);
+     font-family: rockwell, sans-serif;
+     font-size: 1.2rem;
+     width: 10vw;
+     height: 10%;
+     border-radius: 50px;
+     display: inline-block; 
+     transition: box-shadow 0.3s ease-in-out;
+     border:none;
+     box-shadow: 0px 0px 7px rgb(158, 145, 145);   
+
+ }
+ .eliminar {
+     background-color: #d32e2e;
+     
+ }
+ 
+ button:hover{
+    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.459);
 }
+ .table{
+    border-radius: 20px;
+ }
+
+ #ActualizarSeccion{
+    display: none;
+ }
+
+ @media (max-width:800px) {
+    a{
+        font-size: .8rem;
+    }
+    
+ }

@@ -1,7 +1,5 @@
-/* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://use.typekit.net/umq2wvp.css");
-
 *{
     margin: 0;
     padding: 0;
@@ -17,20 +15,12 @@ html, body {
     text-align: center;
     
 }
-svg{
-    width: 5%;
-    margin: 0 93%;
-    position: fixed;
-    padding: 45% 0;
-}
 
 /*Header estilos*/
 header {
     background-color: transparent;
     display: inline-block;
     width: 100%;
-    
- 
 }
 nav{
     
@@ -40,7 +30,7 @@ nav{
     padding-left: 5%;
     padding-right: 5%;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
     
     
 }
@@ -59,12 +49,9 @@ nav ul li a:hover {
     transition: color 0.3s ease;
 }
 
-.carrito {
-    width: 2.4rem;
-    height: auto;
-}
+
 .logo{
-    width: 200px;
+    width: 300px;
 }
 /**Empieza etapa de "inicio"*/
 
@@ -79,7 +66,7 @@ color: white;
 }
 .inicio_descripcion h1{
     font-family: "cooper-black-std", serif;
-    font-size: 1.9rem;
+    font-size: 3rem;
     color: #FAB002;
     margin-bottom: 2rem;  
    
@@ -88,7 +75,7 @@ color: white;
     font-family: rockwell, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: justify;
@@ -98,7 +85,7 @@ color: white;
         font-family: rockwell, sans-serif;
         font-style: normal;
         font-weight: 300;
-        font-size: 1.3rem;
+        font-size: 2rem;
         font-weight: bold;
         margin-bottom: 8rem;
         line-height: 6rem;
@@ -108,7 +95,7 @@ color: white;
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
     width: 40%;
     height: 14%;
@@ -129,7 +116,7 @@ color: white;
       
 }
 .img1{
-    width: 560px;
+    width: 660px;
 }
 
 /*Empieza la sección del menu*/
@@ -146,12 +133,13 @@ color: white;
 }
 .swiper-slide h1{
     color: #FAB002;
-    margin: 9px;
+    margin: 3%;
+    font-size: 4rem;
 }
 .swiper-slide p{
-    font-size: 1.6rem;
+    font-size: 3rem;
     margin: 1rem;
-    font-weight: 540;
+ 
 }
 .swiper {
   width: 95%;
@@ -162,7 +150,7 @@ color: white;
   background-color: yellow;
 }
 .sliderimg{
-  width: 300px;
+  width: 500px;
   
 }
 
@@ -202,7 +190,7 @@ button{
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 1.3rem;
+    font-size:2rem;
     font-weight: bold;
     width: 20%;
     height: 10%;
@@ -232,7 +220,7 @@ button:hover{
 h1{
     color: #FAB002;
     font-family: cooper,sans-serif;
-    font-size: 2.1rem;
+    font-size: 3rem;
     margin: 5%;
 }
 
@@ -246,12 +234,6 @@ h1{
    
 }
 
-#contacto h1{
-    color: #FAB002;
-    
-    
-    
-}
 #contacto .contact{
    display: grid;
    grid-template-areas: 
@@ -261,7 +243,8 @@ h1{
    text-align: center;
    width: 50%;
    font-family: rockwell,sans-serif;
-   font-size: 1.6rem;
+   font-size: 2rem;
+   margin: 9%;
    color: white;
   
 }
@@ -279,15 +262,15 @@ h1{
         
 }
 .insta, .face, .whats{
-    margin: 1% 12%;
-    width: 50px;
+    margin: 0% 9%;
+    width: 80px;
 }
 
 h2{
-    margin: 4rem;
+    margin: 4%;
     color: #FAB002;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -298,19 +281,19 @@ h2{
 }
 .acerca_de_ilustracion{
     width: 50%;
-    margin: 2%;
-    padding: 3% 0;
+    margin: 1%;
+    padding: 1% 0;
 }
 .about_us_img{
-    width: 500px;
+    width: 600px;
     border-radius:30px;
 }
 
 .acerca_de_descripcion {
     width: 100%;
-    margin: 2%;
+    margin: 1%;
     color: white;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 .acerca_de_descripcion p{
     margin: 3rem 0;
@@ -333,17 +316,13 @@ h2{
   }
  
   .box{
-    width: 350px;
-    height: 650px;
+    width: 550px;
+    height: 950px;
     margin: 10px; 
-    padding: 0px;
     border: none;
     border-radius: 14px;
     text-align: center;
-    margin-top: 100px;
     position: relative;
-    
-  
   }
   
   .box img{
@@ -351,13 +330,11 @@ h2{
     width: 100%;
     transition: all 400ms;
     border-radius: 13px;
-    
-  
   
   }
   
   .box h2{
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top: 20px;
     transition: all 500ms;
   }
@@ -369,7 +346,6 @@ h2{
     left: 0;
     bottom: 0;
     overflow: hidden;
-    padding: 0px 10px;
     border-radius: 0px 0px 14px 14px;
     text-align: justify;
     
@@ -377,7 +353,7 @@ h2{
   
   .box p{
     /* para que suba que le pongo  */
-    font-size: 14px;
+    font-size: 2rem;
     color: #ffffff;
     opacity: 0;
     transform: translateY(150px);
@@ -404,14 +380,14 @@ h2{
 
 
 #experiencias h1{
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 .btnexperiencias{
     margin: 3%;
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     width: 20%;
     height: 10%;
     border-radius: 50px;
@@ -435,14 +411,428 @@ footer{
     background-color: #000000;
 }
 footer i{
-    font-size: 40px;
+    font-size: 70px;
 }
 footer p{
+    font-size: 2rem;
     margin: 1% 0;
     color: white;
     line-height: 1.9rem;
 }
 
+
+
+@media(max-width:1366px){
+
+nav{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 5%;
+padding-right: 5%;
+font-weight: bold;
+font-size: 1.2rem;
+}
+ul li{
+display: inline-block;
+padding: 0px 20px;
+
+}
+a{
+color: white;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+color: #FAB002;
+transition: color 0.3s ease;
+}
+
+.carrito {
+width: 2.4rem;
+height: auto;
+}
+.logo{
+width: 200px;
+}
+/*Empieza etapa de "inicio"*/
+
+#inicio{
+display: flex;
+color: white;
+}  
+.inicio_descripcion{
+text-align: center;
+padding: 1rem;
+
+}
+.inicio_descripcion h1{
+font-family: "cooper-black-std", serif;
+font-size: 1.9rem;
+color: #FAB002;
+margin-bottom: 2rem;  
+
+}
+.inicio_descripcion p{
+font-family: rockwell, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 1.3rem;
+font-weight: bold;
+margin-bottom: 1rem;
+text-align: justify;
+line-height: 1.7rem;
+}
+.inicio_descripcion span{
+    font-family: rockwell, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8rem;
+    line-height: 6rem;
+   
+}
+.inicio_descripcion button{
+background-color: #FAB002;
+color: black;
+font-family: rockwell, sans-serif;
+font-size: 1.3rem;
+font-weight: bold;
+width: 40%;
+height: 14%;
+border-radius: 20px;
+display: inline-block; 
+transition: box-shadow 0.3s ease-in-out;
+border:none;
+box-shadow: 0px 0px 7px rgb(158, 145, 145); 
+
+
+}
+.inicio_descripcion button:hover{
+border: none;
+box-shadow: 0px 0px 13px rgb(158, 145, 145); 
+}
+.inicio_ilustracion{
+width: 55%
+  
+}
+.img1{
+width: 560px;
+}
+
+/*Empieza la sección del menu*/
+#menu{
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide{
+margin: 2rem 0;
+background-color: rgba(255, 255, 255, 0.116);
+border-radius: 30px;
+
+}
+.swiper-slide h1{
+color: #FAB002;
+margin: 9px;
+}
+.swiper-slide p{
+font-size: 1.6rem;
+margin: 1rem;
+font-weight: 540;
+}
+.swiper {
+width: 95%;
+height: 100%;
+border-radius: 30px; 
+}
+.productinfo{
+background-color: yellow;
+}
+.sliderimg{
+width: 300px;
+
+}
+
+.nav-btn {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+background: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next {
+right: 50px;
+}
+.swiper-button-prev {
+left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+font-size: 25px;
+color: #fff;
+}
+.swiper-pagination-bullet {
+opacity: 1;
+height: 12px;
+width: 12px;
+background-color: #fff;
+visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+border: 2px solid #fff;
+background-color: #c87e4f;
+}
+
+button{
+background-color: #FAB002;
+color: black;
+font-family: rockwell, sans-serif;
+font-size: 1.3rem;
+font-weight: bold;
+width: 20%;
+height: 10%;
+border-radius: 50px;
+display: inline-block; 
+transition: box-shadow 0.3s ease-in-out;
+border:none;
+box-shadow: 0px 0px 7px rgb(158, 145, 145); 
+
+
+}
+button:hover{
+border: none;
+box-shadow: 0px 0px 13px rgb(158, 145, 145); 
+}
+
+/*Contacto section*/
+
+#contacto iframe{
+margin: 1rem;
+border: 1px solid black;
+border-radius: 50px;
+width: 50vw;
+height: 90vh;
+
+}
+h1{
+color: #FAB002;
+font-family: cooper,sans-serif;
+font-size: 2.1rem;
+margin: 5%;
+}
+
+#contacto{
+justify-content: center;
+display: flex;
+flex-direction: row;
+margin-bottom: 10vh;
+height: 100%;
+
+
+}
+
+#contacto h1{
+color: #FAB002;
+
+
+
+}
+#contacto .contact{
+display: grid;
+grid-template-areas: 
+"seccioncontacto1 seccioncontacto2"
+"seccioncontacto3 seccioncontacto3"
+"redes redes";
+text-align: center;
+width: 50%;
+font-family: rockwell,sans-serif;
+font-size: 1.6rem;
+color: white;
+
+}
+.seccioncontacto1{
+grid-area: seccioncontacto1;
+}
+.seccioncontacto2{
+grid-area: seccioncontacto2;
+}
+.seccioncontacto3{
+grid-area: seccioncontacto3;
+}
+.redes{
+grid-area: redes;
+    
+}
+.insta, .face, .whats{
+margin: 1% 10%;
+width: 50px;
+}
+
+h2{
+margin: 4rem;
+color: #FAB002;
+font-weight: bold;
+font-size: 2rem;
+}
+
+
+/*Acerca de */
+#acerca_de{
+display: flex;
+
+}
+.acerca_de_ilustracion{
+width: 50%;
+margin: 2%;
+padding: 3% 0;
+}
+.about_us_img{
+width: 500px;
+border-radius:30px;
+}
+
+.acerca_de_descripcion {
+width: 100%;
+margin: 2%;
+color: white;
+font-size: 1.4rem;
+}
+.acerca_de_descripcion p{
+margin: 3rem 0;
+text-align: justify;
+}
+
+/*Experiencias*/
+
+.title{
+text-align: center;
+margin-top: 60px;
+letter-spacing: 2px;
+}
+
+.container-box{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.box{
+width: 350px;
+height: 650px;
+margin: 10px; 
+padding: 0px;
+border: none;
+border-radius: 14px;
+text-align: center;
+margin-top: 100px;
+position: relative;
+
+
+}
+
+.box img{
+height: 70%;
+width: 100%;
+transition: all 400ms;
+border-radius: 13px;
+
+
+
+}
+
+.box h2{
+font-size: 1.4rem;
+margin-top: 20px;
+transition: all 500ms;
+}
+
+.box .container-p{
+width: 100%;
+height: 150px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+padding: 0px 10px;
+border-radius: 0px 0px 14px 14px;
+text-align: justify;
+
+}
+
+.box p{
+/* para que suba que le pongo  */
+font-size: 14px;
+color: #ffffff;
+opacity: 0;
+transform: translateY(150px);
+transition: all 600ms;
+}
+
+
+.box:hover{
+background: rgba(0, 0, 0, 0.651);
+}
+
+.box:hover img{
+transform: translateY(-90px);
+}
+
+.box:hover h2{
+transform: translateY(-90px);
+}
+
+.box:hover .container-p p{
+transform: translateY(0px);
+opacity: 1;
+}
+
+
+#experiencias h1{
+font-size: 1.8rem;
+}
+.btnexperiencias{
+margin: 3%;
+background-color: #FAB002;
+color: black;
+font-family: rockwell, sans-serif;
+font-size: 1.2rem;
+width: 20%;
+height: 10%;
+border-radius: 50px;
+display: inline-block; 
+transition: box-shadow 0.3s ease-in-out;
+border:none;
+box-shadow: 0px 0px 7px rgb(158, 145, 145); 
+}
+.btnexperiencias:hover{
+border: none;
+box-shadow: 0px 0px 13px rgb(158, 145, 145); 
+}
+hr{
+border: 1px dashed #FAB002;
+width: 100%;
+margin: auto;
+}
+footer{
+
+padding: 5px;
+background-color: #000000;
+}
+footer i{
+font-size: 40px;
+}
+footer p{
+margin: 1% 0;
+color: white;
+line-height: 1.9rem;
+}
+}
 
 
 @media(max-width:1150px){
@@ -661,6 +1051,9 @@ ul li{
 h1{
     font-size: 1.5rem;
 }
+.swiper-slide h1{
+    font-size: 2rem;
+}
 .swiper-slide p{
     font-size: 1.2rem;
 }
@@ -676,6 +1069,9 @@ h1{
 .box{
     margin-top: 0;
     
+}
+footer p{
+    font-size: 1rem;
 }
 }
 

@@ -12,10 +12,10 @@ if(isset($_POST['registro'])){
 
     $password_encrypt=base64_encode($password);
     $sql=mysqli_query($conexion,"INSERT INTO usuarios (Nombre,Apellido,Telefono,Correo,pass) VALUES ('$nombre','$apellido','$telefono','$email','$password_encrypt')");
-    header('location:../login.html');
+    header('location:../../login.php');
     
 }else{
-    //header('location:../index.html');
+    header('location:../../index.php');
 }
 
 

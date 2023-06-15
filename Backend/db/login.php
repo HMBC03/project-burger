@@ -4,7 +4,6 @@ if(isset($_POST['login'])){
 $email=$_POST['email'];
 $pass=$_POST['password'];
 $pass_encrypt=base64_encode($pass);
-
 $query = mysqli_query($conexion,"SELECT * FROM usuarios WHERE Correo = '$email' AND pass='$pass_encrypt'");
 $cantidad_registro=mysqli_num_rows($query);
 
@@ -15,14 +14,14 @@ if($cantidad_registro==1){
         
     }
     if($_SESSION['Usuario']=="ATENEA"){
-        header('location:../backend/admin.php');
+        header('location:../admin.php');
     }else{
-    header('location:../index.html');
+    header('location:../../index.php');
     }
     
 }else{
     
-    header('location:../login.html');
+    header('location:../../login.php');
 
 }
 }

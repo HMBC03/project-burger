@@ -13,17 +13,17 @@
     
 <section id="registroform">
     <h1>Inicio sesión.</h1>
-    <form action="./Backend/login.php" method="post">
+    <form action="./Backend/db/login.php" method="post">
         <input type="email" placeholder="Email:"  name="email" required>
         <input type="password" placeholder="Password:"  name="password" required>
         <input type="submit" name="login" value="Login">
-        <p>No tienes cuenta? <a href="./registro.html">Crear cuenta</a></p>
+        <p>No tienes cuenta? <a href="./registro.php">Crear cuenta</a></p>
     </form>
     
 </section>
 
 <section id="imgregistro">
-    <img src="./resources/login.jpg" alt="">
+    <img src="./resources/login.jpg" alt="login">
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

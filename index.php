@@ -41,7 +41,7 @@
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#acerca_de">Acerca de</a></li>
                 <li><a href="#experiencias">Experiencias</a></li>
-                <li><a href="./login.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+                <li><a href="./login.php"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
             </ul>
             </div> 
         </nav>
@@ -213,14 +213,7 @@
     </section>
     <button class="btnexperiencias" onclick="window.location.href = '#menu';">Ordenar Ahora</button>
     <hr>
-    <footer>
-        
-        <h1>&copy;Héctor Manuel Beltrán Cifuentes</h1>
-        <a href="https://www.linkedin.com/in/hmbc/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-        <p>Este proyecto ha sido desarrollado con fines academicos para la Universidad Distrital Francisco José de Caldas</p>
-        <p>Bajo la supervisión y guia del docente Andres Pineda en el programa Todos a la U - 2023</p>
-        
-    </footer>
+    
 
 
 
@@ -239,3 +232,15 @@
 
 </body>
 </html>
+
+
+
+
+<footer>
+        
+    <h1>&copy;Héctor Manuel Beltrán Cifuentes</h1>
+    <a href="https://www.linkedin.com/in/hmbc/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+    <p>Este proyecto ha sido desarrollado con fines academicos para la Universidad Distrital Francisco José de Caldas</p>
+    <p>Bajo la supervisión y guia del docente Andres Pineda en el programa Todos a la U - 2023</p>
+    
+</footer>
