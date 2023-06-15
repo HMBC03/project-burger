@@ -537,6 +537,7 @@ border-radius: 30px;
 .swiper-slide h1{
 color: #FAB002;
 margin: 9px;
+font-size: 2rem;
 }
 .swiper-slide p{
 font-size: 1.6rem;
@@ -824,6 +825,9 @@ footer{
 padding: 5px;
 background-color: #000000;
 }
+footer h1{
+    font-size: 2rem;
+}
 footer i{
 font-size: 40px;
 }
@@ -831,6 +835,7 @@ footer p{
 margin: 1% 0;
 color: white;
 line-height: 1.9rem;
+font-size: 1.3rem;
 }
 }
 
