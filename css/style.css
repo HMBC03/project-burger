@@ -30,7 +30,7 @@ nav{
     padding-left: 5%;
     padding-right: 5%;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
     
 }
@@ -66,7 +66,7 @@ color: white;
 }
 .inicio_descripcion h1{
     font-family: "cooper-black-std", serif;
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #FAB002;
     margin-bottom: 2rem;  
    
@@ -74,8 +74,7 @@ color: white;
 .inicio_descripcion p{
     font-family: rockwell, sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: justify;
@@ -84,8 +83,7 @@ color: white;
 .inicio_descripcion span{
         font-family: rockwell, sans-serif;
         font-style: normal;
-        font-weight: 300;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 8rem;
         line-height: 6rem;
@@ -95,7 +93,7 @@ color: white;
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     width: 40%;
     height: 14%;
@@ -134,10 +132,11 @@ color: white;
 .swiper-slide h1{
     color: #FAB002;
     margin: 3%;
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
 .swiper-slide p{
-    font-size: 3rem;
+    color: white;
+    font-size: 2.5rem;
     margin: 1rem;
  
 }
@@ -190,10 +189,10 @@ button{
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size:2rem;
+    font-size:1.7rem;
     font-weight: bold;
     width: 20%;
-    height: 10%;
+    height: 8%;
     border-radius: 50px;
     display: inline-block; 
     transition: box-shadow 0.3s ease-in-out;
@@ -220,7 +219,7 @@ button:hover{
 h1{
     color: #FAB002;
     font-family: cooper,sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 5%;
 }
 
@@ -243,7 +242,7 @@ h1{
    text-align: center;
    width: 50%;
    font-family: rockwell,sans-serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    margin: 9%;
    color: white;
   
@@ -270,7 +269,7 @@ h2{
     margin: 4%;
     color: #FAB002;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 
@@ -293,7 +292,7 @@ h2{
     width: 100%;
     margin: 1%;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .acerca_de_descripcion p{
     margin: 3rem 0;
@@ -353,7 +352,7 @@ h2{
   
   .box p{
     /* para que suba que le pongo  */
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #ffffff;
     opacity: 0;
     transform: translateY(150px);
@@ -387,9 +386,9 @@ h2{
     background-color: #FAB002;
     color: black;
     font-family: rockwell, sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 20%;
-    height: 10%;
+    height: 9%;
     border-radius: 50px;
     display: inline-block; 
     transition: box-shadow 0.3s ease-in-out;
@@ -410,14 +409,17 @@ footer{
     padding: 5px;
     background-color: #000000;
 }
+footer h1{
+    font-size: 2rem;
+}
 footer i{
-    font-size: 70px;
+    font-size: 67px;
 }
 footer p{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 1% 0;
     color: white;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
 }
 
 
@@ -1074,6 +1076,9 @@ h1{
 .box{
     margin-top: 0;
     
+}
+footer h1{
+    font-size: 1.2rem;
 }
 footer p{
     font-size: 1rem;

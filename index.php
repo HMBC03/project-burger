@@ -27,7 +27,7 @@
     
     <header>
         <nav>
-            <a href="index.html"><img class="logo" src="resources/BURGER.png" alt="logo"></a>    
+            <a href="index.php"><img class="logo" src="resources/BURGER.png" alt="logo"></a>    
             
                 <div class="burger_menu">
                     <span class="line1_menu"></span>
@@ -214,21 +214,19 @@
     <button class="btnexperiencias" onclick="window.location.href = '#menu';">Ordenar Ahora</button>
     <hr>
     
-
+    <footer>
+        
+        <h1>&copy;Héctor Manuel Beltrán Cifuentes</h1>
+        <a href="https://www.linkedin.com/in/hmbc/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+        <p>Este proyecto ha sido desarrollado con fines academicos para la Universidad Distrital Francisco José de Caldas</p>
+        <p>Bajo la supervisión y guia del docente Andres Pineda en el programa Todos a la U - 2023</p>
+        
+    </footer>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-
-
-       
-
-
-
-
-
-
 
 </body>
 </html>
@@ -236,11 +234,3 @@
 
 
 
-<footer>
-        
-    <h1>&copy;Héctor Manuel Beltrán Cifuentes</h1>
-    <a href="https://www.linkedin.com/in/hmbc/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-    <p>Este proyecto ha sido desarrollado con fines academicos para la Universidad Distrital Francisco José de Caldas</p>
-    <p>Bajo la supervisión y guia del docente Andres Pineda en el programa Todos a la U - 2023</p>
-    
-</footer>
